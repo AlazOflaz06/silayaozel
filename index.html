@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sıla'ya Özel Sürpriz Kutu 🎁</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Arka Plan Efektleri -->
+  <div class="stars-bg"></div>
+  <div class="floating-hearts" id="heartsContainer"></div>
+
+  <!-- Üst Karşılama (Hero Section) -->
+  <header class="hero">
+    <div class="badge">Chester'ın Gizli Ultisi 🃏</div>
+    <h1>Sıla, Kalbimin En Tatlı Şakası Sensin!</h1>
+    <p class="subtitle">Biliyorum bazen Chester gibi rastgele ve dengesiz hamleler yapıp seni kırabiliyorum... Ama bu kutudan sadece sevgi çıkacak!</p>
+    <button class="cta-btn" onclick="scrollToSection('super-power')">Sürprizi Aç 🎁</button>
+  </header>
+
+  <main class="container">
+
+    <!-- Chester Özel Yetenekler / Aşk Özellikleri -->
+    <section id="super-power" class="card-grid-section">
+      <h2 class="section-title">Sıla'ya Özel "Aşk Ultileri"</h2>
+      <div class="card-grid">
+
+        <div class="feature-card">
+          <div class="card-icon">💣</div>
+          <h3>Patlayıcı Sevgi</h3>
+          <p>Aramızdaki ufak gerginlikleri tek bir gülüşünle yok etme gücüne sahipsin. Kalbimde patlayan en güzel şeysin.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-icon">🍬</div>
+          <h3>Tatlılık Takviyesi</h3>
+          <p>Seninle geçirdiğim tek bir dakika, oyundaki en büyük can basma etkisinden bile daha hızlı iyileştiriyor beni.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-icon">🃏</div>
+          <h3>Rastgele Sürprizler</h3>
+          <p>Chester kutudan ne çıkaracağını bilmeyebilir ama ben Sıla'yı her gün daha çok seveceğimi çok iyi biliyorum.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Mektup Alanı -->
+    <section class="letter-section">
+      <div class="letter-card">
+        <div class="stamp">S&B</div>
+        <h2>Sana Küçük Bir Özür Mektubu... 📜</h2>
+        <div class="letter-content">
+          <p>Sevgili Sıla,</p>
+          <p>Eğer seni biraz olsun üzdüysem veya yüzündeki o muazzam tebessümü kırdıysam gerçekten çok özür dilerim. Tıpkı Chester’ın zar atması gibi bazen yanlış hamleler yapabiliyorum ama bil ki kalbimin yönü her zaman sensin.</p>
+          <p>Senin enerjin, neşen ve varlığın hayatımdaki en güzel detay. Aramızdaki bu küçük soğukluğu eritmek ve yüzünü yeniden güldürmek için bu sayfadaki her bir satırı sana özel hazırladım.</p>
+          <p class="highlight-text">Beni affedip kalbimin tek yıldızı olmaya devam eder misin?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- İnteraktif Soru Kutusuz Barışma Bölümü -->
+    <section class="interactive-section">
+      <h2>Peki, Aramız Katliam Gibi Güzel Olsun mu? 💖</h2>
+      <p>Aşağıdaki düğmelerden birini seç bakalım!</p>
+
+      <div class="button-group">
+        <button id="yesBtn" class="btn btn-yes" onclick="acceptApology()">Evet, Affettim! 🥰</button>
+        <button id="noBtn" class="btn btn-no" onmouseover="moveButton()">Hayır, Hâlâ Kızgınım 😜</button>
+      </div>
+
+      <div id="resultMessage" class="result-message hidden">
+        <div class="result-content">
+          <h3>SÜPER KAZANÇ! 🎉🏆</h3>
+          <p>Kupaları kaptık! Harika bir seçim yaptın Sıla. Söz veriyorum seni bir daha hiç üzmeyeceğim!</p>
+          <div class="confetti-icon">✨ 👑 ✨</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Sıla için özel olarak tasarlandı • Her hakkı Sıla'nın kalbinde saklıdır ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
+
